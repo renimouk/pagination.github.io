@@ -273,7 +273,7 @@
           <div   onclick="getBookVolume('${getISBN(v)}','#book-description')">
             <img src=' ${thumbnail} ' width='200px' height='270px' style='border-radius:10px;  padding:10px; padding-left:0px; padding-right:0px'>
             </div>
-            <a><p href="bookDetails.html?isbn=${getISBN(v)}" style="text-align:center; font-weight: bold">${v["title"]}</p></a>
+            <p style="text-align:center; font-weight: bold">${v["title"]}</p>
             <p style="text-align:center">${authors}</p>
           </li>`;
       });
@@ -309,7 +309,7 @@
             <div onclick="getBookVolume('${ISBN10}','#my-book-description')">
             <img src=' ${thumbnail} ' width='200px' height='270px' style='border-radius:10px;  padding:10px; padding-left:0px; padding-right:0px'>
             </div>
-            <a href="bookDetails.html?isbn=${ISBN10}"><p style="text-align:center; font-weight: bold">${v["title"]}</p></a>
+            <p style="text-align:center; font-weight: bold">${v["title"]}</p>
             <p style="text-align:center">${authors}</p>
           </div>`;
         });
